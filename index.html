@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/18c32a2ab0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="flexbox">
+            <div class="left-section">
+                <h1>Enter Temperature</h1>
+                <label for="temperature"><b>Degree</b></label>
+                <input type="text" id="temperature" value="0">
+                <select id="from">
+                    <option value="C"> &#x2070; C</option>
+                    <option value="F"> &#x2070; F</option>
+                </select>
+                <label for="to"><b>Convert In</b></label>
+                <select id="to">
+                    <option value="F">Fahrenheit  &#x2070;F </option>
+                    <option value="C" disabled>Celcius  &#x2070;C</option>    
+                </select>
+                <button id="submitButton" onclick="convert()">Convert <i class="fa-solid fa-arrow-right"></i></button>  
+            </div>
+            <div class="right-section">
+                <div class="unit">
+                    <sup>o</sup> F 
+                </div>
+                <div class="result">
+                    32
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
