@@ -24,14 +24,16 @@ function convert()
     if(from.value === 'C'&& to.value === 'F')
     {
         var result = temperature * 9/5 + 32;
-        output.innerText = result;
+        output.innerText = result.toFixed(2);
         unit.innerHTML = "<sup>o</sup> F";
+
     }
     else if(from.value === 'F' && to.value === 'C')
     {
         var result = (temperature - 32) / (9/5);
-        output.innerText = result;
+        output.innerText = result.toFixed(2);
         unit.innerHTML = "<sup>o</sup> C";
+    
     }
     else{
         alert("Something went wrong");
